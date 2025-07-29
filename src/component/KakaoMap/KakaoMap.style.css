@@ -1,0 +1,81 @@
+.KakaoMap {
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+    background-color: #f9fafc;
+    /*overflow: hidden;*/
+}
+
+.navbar {
+    margin-top: 45px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    padding: 1rem 2rem;
+    z-index: 100;
+}
+.navbar .container-fluid {
+    gap: 8px;
+    justify-content: center !important;
+}
+
+form .btn{
+    width: 30%;
+    margin-left: auto;
+}
+
+.KakaoMapBox {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.KaKaoMapOverTools {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 0 8px 0;
+    gap: 6px;
+    scroll-behavior: smooth;
+    width: 94%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.KaKaoMapOverTools::-webkit-scrollbar {
+    display: none;
+}
+.KaKaoMapOverTools button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    /*height: 100%;*/
+    padding: 6px 8px 6px 8px;
+}
+
+.KaKaoMapUnderTools{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 0 8px 0;
+    gap: 6px;
+    scroll-behavior: smooth;
+    width: 94%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.KaKaoMapUnderTools::-webkit-scrollbar {
+    display: none;
+}
+.KaKaoMapUnderTools button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    padding: 6px 8px 6px 8px;
+}

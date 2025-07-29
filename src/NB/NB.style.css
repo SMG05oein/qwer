@@ -1,0 +1,202 @@
+.NB{
+    border-radius: 100px 100px 0 0;
+    background-color: white;
+}
+.NB.container-fluid{
+    border-radius: 100px 100px 0 0;
+    background-color: white;
+}
+/*Begin TopMenu style*/
+
+/* 천안시 로고를 원형 박스 안에 깔끔하게 표시 */
+.logo-pill {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  gap: 6px; /* 로고와 텍스트 사이 간격 */
+}
+
+.logo-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: 700;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+
+.topMenuBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 55px;
+    z-index: 1000;
+    background: var(--CheonanBlue);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding-bottom: 1px;
+}
+
+.topMenuBar a {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    color: #333;
+    text-decoration: none;
+    padding: 4px 10px;
+    transition: all 0.2s ease-in-out;
+}
+.topMenuBar font {
+    font-size: 1.1rem;
+    font-weight: 1000;
+    color: #333;
+    text-decoration: none;
+    padding: 4px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/*----유저네임 꾸미기----*/
+.user-name {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 8px;
+  text-align: center;
+}
+
+
+/*End TopMenu style*/
+
+/*-----------------------*/
+
+/*Begin GNB style*/
+.GNB {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white; /* ✅ 추가 */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.08);
+    padding: 0 !important;
+    z-index: 999;
+}
+
+
+
+.GNB a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    /*padding: 6px 14px;*/
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+@media screen and (max-width: 619px) {
+    .GNB a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 392px) {
+    .GNB a{
+        font-size: 12px;
+    }
+}
+
+.GNB a:hover {
+    background-color: #e6f0ff;
+    color: #007bff;
+}
+
+.PayingBar {
+    /*height: 70vh;*/
+    background-color: var(--primary);
+    text-align: center;
+    border-radius: 100px 100px 0 0;
+    /*box-shadow: 0 10px 0 var(--primary);*/
+    /*padding: 4px 0;*/
+}
+
+.Paying {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.gnb-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+    height: 100%;
+}
+
+.gnb-link svg {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+.gnb-link.active {
+    color: #0055A4;
+    font-weight: 700;
+}
+
+.gnb-link.active svg {
+    color: #0055A4;
+}
+
+
+/*.PayingUnderBar{*/
+/*    background-color: var(--primary);*/
+/*    overflow: hidden;*/
+/*    transition: height 0.4s ease;*/
+/*}*/
+
+.PayingWrapper {
+    border-radius: 100px 100px 0 0;
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 10s ease;
+}
+
+.PayingWrapper.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.OnePayingBar {
+    border-radius: 100px 100px 0 0;
+    /*transform: translateY(100px);*/
+    /*opacity: 1;*/
+    /*transition: all 10s ease;*/
+}
+
+.PayingUnderBar {
+    /*background-color: var(--primary);*/
+    background: linear-gradient(to bottom, #0EB4FC, #0055A4);
+}
+.PayingUnderBar.open {
+    height: 55vh;
+}
+
+
+/*End GNB style*/

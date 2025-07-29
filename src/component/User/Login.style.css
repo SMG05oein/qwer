@@ -1,0 +1,125 @@
+.Login {
+  max-width: 400px;
+  margin: 80px auto 40px auto;
+  padding: 32px 24px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  padding-top: 30px;
+}
+
+.Login h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.Login .form-control {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Login .form-control:focus {
+  border-color: #3396ff;
+  outline: none;
+}
+
+.Login .btn {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  transition: background-color 0.2s, transform 0.1s;
+  box-sizing: border-box;
+}
+
+.Login .btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btn-kakao {
+  background-color: #fee500;
+  color: #3c1e1e;
+}
+
+.btn-naver {
+  background-color: #03c75a;
+  color: white;
+}
+
+.btn-etc {
+  background-color: #666;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #3396ff;
+  color: white;
+}
+
+.btn-signup {
+  background-color: #6ecbff;
+  color: #00395f;
+}
+
+.btn-home {
+  background-color: #222;
+  color: white;
+}
+
+.socialLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.socialLogin span {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* ✅ 반응형 스타일 (모바일 화면) */
+@media (max-width: 480px) {
+  .Login {
+    margin: 40px 16px;
+    padding: 24px 16px;
+    border-radius: 16px;
+    padding-top: 30px;
+  }
+
+  .Login h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .Login .form-control {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+
+  .Login .btn {
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .socialLogin span {
+    font-size: 13px;
+  }
+}

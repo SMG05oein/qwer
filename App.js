@@ -24,6 +24,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // 기타
 import QrPayPage from './component/qrpay/QrPayPage';
 import Test from "./Test";
+import TossPaymentPage from "./payments/TossPaymentPage";
+import TossPaymentCharge from "./payments/TossPaymentCharge";
+import TossPaymentFail from "./payments/TossPaymentFail";
 
 function App() {
   return (
@@ -57,9 +60,9 @@ function MainApp() {
         <Route path="/pay" element={<QrPayPage />} />
 
         {/* Toss 결제 관련 라우트 (경로 중복 제거됨) */}
-        {/*<Route path="/payment" element={<TossPaymentPage />} />*/}
-        {/*<Route path="/charge" element={<TossPaymentCharge />} />*/}
-        {/*<Route path="/payment-fail" element={<TossPaymentFail />} />*/}
+        <Route path="/payment" element={<TossPaymentPage />} />
+        <Route path="/charge" element={<TossPaymentCharge />} />
+        <Route path="/payment-fail" element={<TossPaymentFail />} />
 
         {/* 404 */}
         <Route path="*" element={<NotFound />} />

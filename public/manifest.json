@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "디소상 앱",
+  "short_name": "디소상",
   "icons": [
     {
       "src": "favicon.ico",

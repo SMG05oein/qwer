@@ -1,0 +1,30 @@
+.NotFoundPage {
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', 'Pretendard', sans-serif;
+    color: #333;
+}
+
+.NotFoundPage h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.NotFoundPage p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.goHome {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.goHome:hover {
+    background-color: #0056b3;
+}
